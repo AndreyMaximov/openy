@@ -5,6 +5,7 @@
  * Defines the OpenY Profile install screen by modifying the install form.
  */
 
+use Drupal\openy\Form\ConfigureProfileForm;
 use Drupal\openy\Form\ContentSelectForm;
 use Drupal\openy\Form\ThirdPartyServicesForm;
 use Drupal\openy\Form\UploadFontMessageForm;
@@ -16,6 +17,15 @@ use Drupal\Core\Routing\RouteMatchInterface;
  */
 function openy_install_tasks() {
   return [
+    'openy_select_features' => [
+      'display_name' => t('Configure profile'),
+      'display' => TRUE,
+      'type' => 'form',
+      'function' => ConfigureProfileForm::class,
+    ],
+    'openy_install_features' => [
+      'type' => 'batch',
+    ],
     'openy_select_content' => [
       'display_name' => t('Import demo content'),
       'display' => TRUE,
@@ -247,6 +257,28 @@ function openy_demo_content_configs_map($key = NULL) {
   ];
   
   return array_key_exists($key, $map) ? $map[$key] : [];
+}
+
+/**
+ * Create batch for enabling features.
+ *
+ * @param array $install_state
+ *   Installation parameters.
+ *
+ * @return array
+ *   Batch.
+ */
+function openy_install_features(array &$install_state) {
+  $module_operations = [];
+
+  foreach ($install_state['openy']['pick'] as $category => $pick) {
+    $pick = array_filter($pick[$category]);
+    foreach ($pick as $module) {
+      $module_operations[] = ['openy_enable_module', (array) $module];
+    }
+  }
+
+  return ['operations' => $module_operations];
 }
 
 /**
@@ -494,7 +526,7 @@ function openy_form_system_theme_settings_alter(&$form, FormStateInterface $form
 
     $css_editor_info = [
       '#prefix' => '<div class="description">',
-      '#markup' => t('In order to change CSS on each particular page you 
+      '#markup' => t('In order to change CSS on each particular page you
       should use the following selectors:<br/>
       - .page-node-type-{node type};<br/>
       - .node-id-{node ID};<br/>
