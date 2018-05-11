@@ -13,3 +13,7 @@ dependencies:
   - openy_code_block
   - paragraphs
 version: 8.x-1.0
+openy:
+  presets:
+    - extended
+  category: paragraph

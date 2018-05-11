@@ -27,3 +27,7 @@ dependencies:
   - taxonomy
   - text
   - user
+openy:
+  presets:
+    - extended
+  category: content_type

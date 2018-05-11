@@ -15,3 +15,6 @@ dependencies:
   - verf
   - views
   - views_block_filter_block
+openy:
+  presets: {}
+  category: paragraph

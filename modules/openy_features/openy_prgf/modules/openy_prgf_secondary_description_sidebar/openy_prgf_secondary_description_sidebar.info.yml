@@ -10,3 +10,8 @@ dependencies:
   - openy_er
   - paragraphs
   - text
+openy:
+  presets:
+    - standard
+    - extended
+  category: paragraph

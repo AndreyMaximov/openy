@@ -19,3 +19,8 @@ dependencies:
   - paragraphs
   - taxonomy
   - text
+openy:
+  presets:
+    - standard
+    - extended
+  category: paragraph

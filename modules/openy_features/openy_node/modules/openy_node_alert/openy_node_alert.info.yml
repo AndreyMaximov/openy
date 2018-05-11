@@ -22,3 +22,6 @@ dependencies:
   - text
   - user
   - views
+openy:
+  presets: {}
+  category: content_type

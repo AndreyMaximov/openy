@@ -9,3 +9,8 @@ dependencies:
   - openy_prgf
   - paragraphs
   - text
+openy:
+  presets:
+    - standard
+    - extended
+  category: paragraph

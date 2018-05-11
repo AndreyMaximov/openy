@@ -5,3 +5,6 @@ core: 8.x
 package: OpenY
 dependencies:
   - datalayer
+openy:
+  presets: {}
+  category: feature

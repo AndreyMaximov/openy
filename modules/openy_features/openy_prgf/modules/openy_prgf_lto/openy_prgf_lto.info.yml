@@ -9,3 +9,6 @@ dependencies:
   - link
   - paragraphs
   - text
+openy:
+  presets: {}
+  category: paragraph

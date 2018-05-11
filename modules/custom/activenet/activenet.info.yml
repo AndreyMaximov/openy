@@ -3,3 +3,6 @@ type: module
 description: Provides basic ActiveNet integration
 core: 8.x
 package: OpenY
+openy:
+  presets: {}
+  category: helper

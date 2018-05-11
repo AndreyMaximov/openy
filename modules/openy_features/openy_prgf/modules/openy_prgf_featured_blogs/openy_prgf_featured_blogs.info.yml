@@ -10,3 +10,7 @@ dependencies:
   - openy_node_blog
   - openy_prgf
   - paragraphs
+openy:
+  presets:
+    - extended
+  category: paragraph

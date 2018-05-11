@@ -14,3 +14,8 @@ dependencies:
   - openy_block_custom_simple
   - openy_prgf
   - paragraphs
+openy:
+  presets:
+    - standard
+    - extended
+  category: paragraph

@@ -10,3 +10,8 @@ dependencies:
   - openy_node_news
   - openy_prgf
   - paragraphs
+openy:
+  presets:
+    - standard
+    - extended
+  category: paragraph

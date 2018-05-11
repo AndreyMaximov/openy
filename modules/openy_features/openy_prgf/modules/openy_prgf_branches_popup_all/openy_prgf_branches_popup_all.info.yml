@@ -10,3 +10,6 @@ dependencies:
   - paragraphs
   - plugin
   - openy_popups
+openy:
+  presets: {}
+  category: paragraph

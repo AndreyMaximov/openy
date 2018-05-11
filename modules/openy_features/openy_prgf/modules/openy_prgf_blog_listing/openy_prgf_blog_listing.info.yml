@@ -18,3 +18,7 @@ dependencies:
   - verf
   - views
   - views_infinite_scroll
+openy:
+  presets:
+    - extended
+  category: paragraph

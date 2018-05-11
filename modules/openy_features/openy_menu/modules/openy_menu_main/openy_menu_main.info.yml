@@ -9,3 +9,8 @@ dependencies:
   - system
   - user
   - views
+openy:
+  presets:
+    - standard
+    - extended
+  category: menu

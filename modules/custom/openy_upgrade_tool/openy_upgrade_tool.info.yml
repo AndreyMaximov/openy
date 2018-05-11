@@ -8,3 +8,5 @@ dependencies:
   - features
   - config_import
   - logger_entity
+  - views
+  - field

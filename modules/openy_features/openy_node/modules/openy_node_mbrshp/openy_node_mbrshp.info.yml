@@ -22,3 +22,7 @@ dependencies:
   - scheduler
   - text
   - user
+openy:
+  presets:
+    - extended
+  category: content_type

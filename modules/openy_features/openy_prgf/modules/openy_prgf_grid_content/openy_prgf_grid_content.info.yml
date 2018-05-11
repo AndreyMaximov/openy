@@ -15,3 +15,6 @@ dependencies:
   - options
   - paragraphs
   - text
+openy:
+  presets: {}
+  category: paragraph

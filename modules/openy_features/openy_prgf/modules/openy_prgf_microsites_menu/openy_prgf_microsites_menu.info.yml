@@ -10,3 +10,6 @@ dependencies:
   - inline_entity_form
   - openy_block_menu
   - paragraphs
+openy:
+  presets:
+  category: paragraph

@@ -13,3 +13,6 @@ dependencies:
   - pathauto
   - taxonomy
   - text
+openy:
+  presets: {}
+  category: taxonomy

@@ -5,3 +5,8 @@ core: 8.x
 package: OpenY
 dependencies:
   - system
+openy:
+  presets:
+    - standard
+    - extended
+  category: menu

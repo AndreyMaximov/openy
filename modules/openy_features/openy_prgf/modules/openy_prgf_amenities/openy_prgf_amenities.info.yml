@@ -17,3 +17,6 @@ dependencies:
   - user
   - views
   - views_field_formatter
+openy:
+  presets: {}
+  category: paragraph

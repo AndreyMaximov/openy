@@ -10,3 +10,6 @@ dependencies:
   - paragraphs
   - plugin
   - openy_session_instance
+openy:
+  presets: {}
+  category: paragraph

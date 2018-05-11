@@ -19,3 +19,8 @@ dependencies:
   - video_embed_field
   - video_embed_media
   - views
+openy:
+  presets:
+    - standard
+    - extended
+  category: media

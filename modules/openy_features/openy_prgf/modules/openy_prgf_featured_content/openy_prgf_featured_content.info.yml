@@ -13,3 +13,8 @@ dependencies:
   - paragraphs
   - slick
   - text
+openy:
+  presets:
+    - standard
+    - extended
+  category: paragraph

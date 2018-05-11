@@ -6,3 +6,6 @@ package: OpenY
 dependencies:
   - migrate_tools
   - migrate_plus
+openy:
+  presets: {}
+  category: helper

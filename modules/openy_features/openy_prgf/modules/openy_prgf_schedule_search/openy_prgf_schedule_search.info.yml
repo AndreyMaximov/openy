@@ -10,3 +10,6 @@ dependencies:
   - openy_schedules
   - paragraphs
   - plugin
+openy:
+  presets: {}
+  category: paragraph

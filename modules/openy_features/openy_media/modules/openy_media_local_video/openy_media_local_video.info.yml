@@ -22,3 +22,8 @@ dependencies:
   - user
   - video
   - views
+openy:
+  presets:
+    - standard
+    - extended
+  category: media

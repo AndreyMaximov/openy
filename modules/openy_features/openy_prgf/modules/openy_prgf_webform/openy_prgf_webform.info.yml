@@ -9,3 +9,8 @@ dependencies:
   - field
   - paragraphs
   - webform
+openy:
+  presets:
+    - standard
+    - extended
+  category: paragraph

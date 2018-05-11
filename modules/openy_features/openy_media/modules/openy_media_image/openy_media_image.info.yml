@@ -21,3 +21,8 @@ dependencies:
   - taxonomy
   - user
   - views
+openy:
+  presets:
+    - standard
+    - extended
+  category: media

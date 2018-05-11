@@ -10,3 +10,6 @@ dependencies:
   - openy_prgf
   - paragraphs
   - plugin
+openy:
+  presets: {}
+  category: paragraph

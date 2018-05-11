@@ -9,3 +9,6 @@ dependencies:
   - openy_programs_search
   - paragraphs
   - plugin
+openy:
+  presets: {}
+  category: paragraph

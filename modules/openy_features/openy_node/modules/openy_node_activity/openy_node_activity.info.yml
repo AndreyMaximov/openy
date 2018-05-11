@@ -15,3 +15,6 @@ dependencies:
   - scheduler
   - text
   - user
+openy:
+  presets: {}
+  category: content_type

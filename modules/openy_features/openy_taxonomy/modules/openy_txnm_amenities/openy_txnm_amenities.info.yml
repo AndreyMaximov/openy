@@ -11,3 +11,6 @@ dependencies:
   - path
   - taxonomy
   - text
+openy:
+  presets: {}
+  category: taxonomy

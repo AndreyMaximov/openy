@@ -18,3 +18,8 @@ dependencies:
   - pathauto
   - scheduler
   - user
+openy:
+  presets:
+    - standard
+    - extended
+  category: content_type

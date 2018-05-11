@@ -15,3 +15,7 @@ dependencies:
   - plugin
   - user
   - views
+openy:
+  presets:
+    - extended
+  category: paragraph

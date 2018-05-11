@@ -24,3 +24,7 @@ dependencies:
   - telephone
   - text
   - user
+openy:
+  presets:
+    - extended
+  category: paragraph

@@ -11,3 +11,6 @@ dependencies:
   - rabbit_hole
   - taxonomy
   - text
+openy:
+  presets: {}
+  category: taxonomy

@@ -7,3 +7,6 @@ version: '8.x-1.0'
 dependencies:
   - paragraphs
   - openy_location
+openy:
+  presets: {}
+  category: paragraph
