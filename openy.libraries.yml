@@ -1,4 +1,0 @@
-profile-preset:
-  version: 1.x
-  js:
-    assets/profile-preset.js: {}

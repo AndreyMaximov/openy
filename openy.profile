@@ -271,11 +271,11 @@ function openy_demo_content_configs_map($key = NULL) {
 function openy_install_features(array &$install_state) {
   $module_operations = [];
 
-  foreach ($install_state['openy']['pick'] as $category => $pick) {
-    $pick = array_filter($pick[$category]);
-    foreach ($pick as $module) {
-      $module_operations[] = ['openy_enable_module', (array) $module];
-    }
+  $preset = $install_state['openy']['preset'];
+  $modules = ConfigureProfileForm::getModulesToInstallWithDependencies($preset);
+
+  foreach ($modules as $module) {
+    $module_operations[] = ['openy_enable_module', (array) $module];
   }
 
   return ['operations' => $module_operations];
@@ -365,6 +365,10 @@ function openy_discover_broken_paragraphs(array &$install_state) {
    */
   $process_paragraphs = function (array $tables, $plugin_id_field, $config_field) {
     foreach ($tables as $table) {
+      // Everything is optional nowadays.
+      if (!\Drupal::database()->schema()->tableExists($table)) {
+        continue;
+      }
       // Select all paragraphs that have "broken" as plugin_id.
       $query = \Drupal::database()->select($table, 'ptable');
       $query->fields('ptable');
@@ -415,6 +419,10 @@ function openy_fix_configured_paragraph_blocks(array &$install_state) {
   ];
 
   foreach ($tables as $table) {
+    // Everything is optional nowadays.
+    if (!\Drupal::database()->schema()->tableExists($table)) {
+      continue;
+    }
     $query = \Drupal::database()
       ->select($table, 'ptable');
     $query->fields('ptable');

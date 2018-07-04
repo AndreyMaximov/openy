@@ -55,59 +55,21 @@ dependencies:
   - plugin
   - migrate_plus
   - migrate_tools
-  # OpenY
-  - openy_upgrade_tool
-# Soft dependencies.
-optional:
-  - field_group
-  - address
-  - datalayer
-  - paragraphs
-  - pathauto
-  - media_entity
-  - views_block_filter_block
-  - libraries
-  - optimizely
-  - verf
-  - simple_menu_icons
-  - slick
-  - slick_ui
-  - slick_views
-  - blazy
-  - blazy_ui
-  - geolocation
-  - rabbit_hole
-  - rh_node
-  - rh_taxonomy
-  - redirect
-  - simple_sitemap
   - metatag
   - metatag_open_graph
-  - google_tag
-  - google_analytics
-  - scheduler
-  - webform
-  - webform_ui
-  - captcha
-  - image_captcha
-  - recaptcha
-  - admin_toolbar
-  - colorbutton
-  - better_exposed_filters
-  - custom_formatters
-  - token_filter
-  - views_field_formatter
-  - ctools
-  - lndr
-  - crop
-  - focal_point
-  - video
-  - media_entity_video
-  - easy_breadcrumb
-  - ckeditor_bootstrap_buttons
-  - fontyourface
-  - local_fonts
-  - css_editor
+  # OpenY
+  - openy_upgrade_tool
+  - openy_migrate
+  - openy_menu_main
+  - openy_menu_footer
+  - openy_media_document
+  - openy_media_image
+  - openy_media_local_video
+  - openy_media_video
+  - openy_node_landing
+  #- openy_user
+  - openy_block_custom_simple
+
 themes:
   - bartik
   - openy_rose
