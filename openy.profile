@@ -26,12 +26,12 @@ function openy_install_tasks() {
     'openy_install_features' => [
       'type' => 'batch',
     ],
-    'openy_select_content' => [
-      'display_name' => t('Import demo content'),
-      'display' => TRUE,
-      'type' => 'form',
-      'function' => ContentSelectForm::class,
-    ],
+//    'openy_select_content' => [
+//      'display_name' => t('Import demo content'),
+//      'display' => TRUE,
+//      'type' => 'form',
+//      'function' => ContentSelectForm::class,
+//    ],
     'openy_import_content' => [
       'type' => 'batch',
     ],
@@ -293,6 +293,10 @@ function openy_install_features(array &$install_state) {
 function openy_import_content(array &$install_state) {
   $module_operations = [];
   $migrate_operations = [];
+
+  if (!isset($install_state['openy']['content'])) {
+    $install_state['openy']['content'] = [];
+  }
 
   if (!empty($install_state['openy']['content']['webform'])) {
     // Install webform feature - it's not handled as content migration.
