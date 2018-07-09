@@ -394,7 +394,7 @@ function openy_lily_preprocess_page(&$variables) {
     $node = $variables['node'];
     /** @var Drupal\openy_loc_camp\CampService $service */
     if (\Drupal::hasService('openy_loc_camp.camp_service')) {
-      $service = \Drupal::service('openy_loc_camp.camp_service')
+      $service = \Drupal::service('openy_loc_camp.camp_service');
       if ($service->nodeHasOrIsCamp($node)) {
         $variables['page_class'] = 'is-camp';
       }
