@@ -235,11 +235,17 @@ function openy_rose_page_attachments_alter(array &$page) {
   // Remove and replace the favicon if this page is a camp node or landing page
   // related to a camp, and the custom camp favicon has been set for the theme.
 
-  // Exit if not a node page, or if the 'openy_loc_camp.camp_service' is not available.
+  // Exit if not a node page.
   $node = \Drupal::request()->attributes->get('node');
-  if (!$node || !is_object($node) || !($camp_service = \Drupal::service('openy_loc_camp.camp_service'))) {
+  if (!$node || !is_object($node)) {
     return;
   }
+
+  // Exit if the 'openy_loc_camp.camp_service' is not available.
+  if (!\Drupal::hasService('openy_loc_camp.camp_service')) {
+    return;
+  }
+  $camp_service = \Drupal::service('openy_loc_camp.camp_service');
 
   // Exit if not a camp or related to a camp.
   if (!$camp_service->nodeHasOrIsCamp($node)) {
