@@ -58,6 +58,7 @@ dependencies:
   - metatag
   - metatag_open_graph
   # OpenY
+  - openy_editor
   - openy_upgrade_tool
   - openy_migrate
   - openy_menu_main
@@ -67,6 +68,7 @@ dependencies:
   - openy_media_local_video
   - openy_media_video
   - openy_node_landing
+  - openy_tour
   #- openy_user
   - openy_block_custom_simple
 
