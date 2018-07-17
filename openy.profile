@@ -18,7 +18,7 @@ use Drupal\Core\Routing\RouteMatchInterface;
 function openy_install_tasks() {
   return [
     'openy_select_features' => [
-      'display_name' => t('Configure profile'),
+      'display_name' => t('Select installation type'),
       'display' => TRUE,
       'type' => 'form',
       'function' => ConfigureProfileForm::class,
