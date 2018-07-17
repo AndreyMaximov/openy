@@ -198,8 +198,6 @@ class ConfigureProfileForm extends FormBase {
    * @return string
    */
   private function getSelectedPresetMarkup($preset) {
-    unset($_SESSION["messages"]["error"]);
-
     $presets = self::getPresetsInfo();
     if (!isset($presets[$preset])) {
       return [
