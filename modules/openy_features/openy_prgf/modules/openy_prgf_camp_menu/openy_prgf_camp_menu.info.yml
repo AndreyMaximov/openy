@@ -9,6 +9,4 @@ dependencies:
   - openy_prgf
   - paragraphs
   - plugin
-openy:
-  presets: {}
-  category: paragraph
+  - openy_loc_camp
